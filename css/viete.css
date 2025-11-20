@@ -1,5 +1,6 @@
 body
 {
+	background-image: url("/img/hatter.jpg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	font-family: 'Times New Roman';
@@ -29,13 +30,14 @@ h3
 	text-decoration:underline;
 	font-style: italic;	
 }
-div.jobbra
+.jobbra
 {
 	float:right;
 }
 .keplet
 {
-	text-align:center;
+	display: block;
+	margin: 0 auto;
 }
 form
 {
