@@ -35,11 +35,29 @@
 
         <img class="keplet" src="/img/megoldokeplet.png" alt="Megoldóképlet" title="Megoldóképlet">
     </p>
-
-
-
-
-
-A valós gyökök száma:    
+    <p>
+        a: <input type="text" id="a_erteke" value="1" size="5">
+        b: <input type="text" id="b_erteke" value="1" size="5">
+        c: <input type="text" id="c_erteke" value="1" size="5">
+        <input type="button" onclick="szamol()" value="Számol" id="szamol_btn">
+        <br>
+        <h3>A valós gyökök száma: <span id="gyokok">?</span></h3>
+    </p>
 </body>
+<script>
+    function szamol()
+    {
+        const a_erteke = document.getElementById('a_erteke').value;
+        const b_erteke = document.getElementById('b_erteke').value;
+        const c_erteke = document.getElementById('c_erteke').value;
+        d = b_erteke*b_erteke-4*a_erteke*c_erteke;
+        if(d<0)
+            document.getElementById('gyokok').innerHTML = 0;
+        else if(d==0)
+            document.getElementById('gyokok').innerHTML = 1;
+        else if(d>0)
+            document.getElementById('gyokok').innerHTML = 2;
+
+    }
+</script>
 </html>
